@@ -44,7 +44,7 @@ All of those libraries are usually available on most of the most common distribu
     yum install libmicrohttpd-devel jansson-devel \
        openssl-devel libsrtp-devel sofia-sip-devel glib2-devel \
        opus-devel libogg-devel libcurl-devel pkgconfig gengetopt \
-       libconfig-devel libtool autoconf automake
+       libconfig-devel libtool autoconf gtk-doc automake
 
 Notice that you may have to `yum install epel-release` as well if you're attempting an installation on a CentOS machine instead.
 
@@ -59,7 +59,7 @@ On Ubuntu or Debian, it would require something like this:
 
 While `libnice` is typically available in most distros as a package, the version available out of the box in Ubuntu is known to cause problems. As such, we always recommend manually compiling and installing the master version of libnice. Installation of libnice master is quite straightforward:
 
-	git clone https://gitlab.freedesktop.org/libnice/libnice
+	git clone https://gitlab.freedesktop.org/libnice/libnice.git
 	cd libnice
 	./autogen.sh
 	./configure --prefix=/usr
